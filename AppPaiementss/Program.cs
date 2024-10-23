@@ -20,6 +20,16 @@ internal class Program
 
         pay1.AfficherDetails();
         pay2.AfficherDetails();
-        
+
+        Utilisateur user1 = new Utilisateur("OGOU");
+
+        user1.AjouterPaiement(carte1);
+        user1.AjouterPaiement(carte2);
+        user1.AjouterPaiement(carte3);
+        user1.AjouterPaiement(pay1);
+        user1.AjouterPaiement(pay2);
+
+        user1.AfficherInfos();
+
     }
 }
