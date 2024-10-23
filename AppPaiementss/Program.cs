@@ -12,5 +12,14 @@ internal class Program
         carte1.AfficherDetails();
         carte2.AfficherDetails();
         carte3.AfficherDetails();
+
+
+        Paypal pay1 = new Paypal(75.98, "Zara paiement", "princess@gmail.com");
+        Paypal pay2 = new Paypal(11.02, "Amazon paiement", "princ@gmail.com");
+       
+
+        pay1.AfficherDetails();
+        pay2.AfficherDetails();
+        
     }
 }
